@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predefenidos</title>
+    <link rel="stylesheet" href="predefenidos.css">
+</head>
+<body>
+    <h1>Tareas de predefenidos</h1>
+    <div class="tarea1">
+        <header>
+            <h2>Capicua</h2>
+            <div class="dashBoard">
+                <label>Escribir un número entero positivo  <input id="numCapicua" type="number" value="1225"></label>
+                <button id="bValidar">validar</button>
+            </div>
+        </header>
+        <footer>
+            <div id="result1"></div>
+        </footer>
+    </div>
+
+
+    <div class="tarea2">
+        <header>
+            <h2>Una frase repetida</h2>
+            <div class="dashBoard">
+                <label>Escribir una frase <textarea id="frase" rows="1" cols="5"></textarea></label>
+                <button id="bBuscar">validar</button>
+            </div>
+        </header>
+        <footer>
+            <div id="result2"></div>
+        </footer>
+    </div>
+
+
+    <div class="tarea3">
+        <header>
+            <h2>Asientos</h2>
+            <div class="dashBoard">
+            </div>
+        </header>
+        <footer>
+            <div id="result3"></div>
+        </footer>
+    </div>
+
+    <div class="tarea4">
+        <header>
+            <h2>Pinche calendario</h2>
+            <div class="dashBoard"></div>
+            <div id="calendario">
+            </div>
+        </header>
+        <footer>
+            <div id="prueba">
+            </div>
+        </footer>
+    </div>
+
+
+    <div class="tarea5">
+        <header>
+            <h2>Verificacion de DNI</h2>
+            <div class="dashBoard">
+                <p>Introducir numeros del NIF (son 8) o NIE (son 7 numeros y una letra en el empiezo)</p>
+                <p>Letra (en caso de NIE) <input id="letraNIE" type="text" maxlength="1" value="Y" placeholder="X/Y/Z"> y numeros <input id="numDNI" type="number" min="7" max="8" value="12345678"><input id="letraDNI" type="text" maxlength="1" value="Q"> <button id="obtenerNum">obtener</button></p>     
+            </div>
+        </header>
+        <footer>
+            <span class="error" id="errorDNI"></span>
+            <div id="result5"></div>
+        </footer>
+    </div>
+
+
+
+    <div class="tarea6">
+        <header>
+            <h2>Codificar/descodificar una frase</h2>
+            <div class="dashBoard">
+                <p><label>Escribir una frase <textarea id="fraseCodificar" rows="1" cols="5"></textarea></label>
+                <button id="bCod">Codificar</button></p>
+
+                <p><label>Copiar codigo en formato xxx,xxx...  <textarea id="fraseDescodificar" rows="1" cols="5"></textarea></label>
+                <button id="bDescod">Descodificar</button></p>
+            </div>
+        </header>
+        <footer>
+            <div id="result6"></div>
+            <div id="result7"></div>
+
+        </footer>
+    </div>
+
+
+    <script src="predefenidos.js"></script>
+</body>
+</html>
